@@ -71,6 +71,6 @@ int sparseArray[num+1][n+1] (其中num表示有效值，n表示原始数组的�
 ``` java
 当rare > front 时， num = rare - front
 当rare < front 时， num = rare + Maxsize - front
-综上所述 nume = (rare + Maxsize - front) % Maxsize 
+综上所述 num = (rare + Maxsize - front) % Maxsize 
 ```
 5. 代码实现<!-- java学习后写 -->
