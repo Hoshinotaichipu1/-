@@ -13,6 +13,9 @@ class VariableTest{
         int a1 = 250;
         byte a2 = (byte)a1;
         System.out.println(a2);
+        
+        String s1 = 3.5f + "";
+        System.out.println(s1);
 
 
     
