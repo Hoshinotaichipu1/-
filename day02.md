@@ -53,5 +53,44 @@ int i = 8 << 1;
 1. 流程控制有三种结构
    1. 顺序结构
    2. 分支结构
+      1. if-else结构
+         1. if ( 如果为ture,则执行{}内的语句 ) {}
+         2. 就近原则，如果有多个if和一个else(均无大括号表示范围)，则else与最近的if匹配
+      2. switch-case结构
+         1. switch(表达式){
+            case 常量1 :
+                  执行语句;
+                  break;
+            case 常量2 :
+                  执行语句;
+                  break;
+            default
+                  执行语句;
+                  break; 
+          }
+         2. switch根据表达式中的值来匹配case后的常量，若相同，则进入该case语句中执行对应的执行语句，执行完后会继续执行该case以下的执行语句(不判断)，直到遇到关键字break或switch语句结束。
+         3. 表达式的值只能为六种数据类型：byte short int char 枚举 String
+         4. break关键字可以省去，可以通过省去break进行累加之类的计算。
+          ![](images/2022-03-18-15-15-27.png)
    3. 循环结构
+      1. for循环
+      2. while循环
+      3. do-while循环
+2. 用变量接收用户输入的数据(Scanner)
+   1. 使用Scanner类需要在class前导入包==import java.util.Scanner==
+   2. 需要新建一个对象Scanner scan = new Scanner(System.in);
+   3. 使用一个变量来接收相对应的数据
+``` java {.line-numbers}
+       int score = scan.nextInt();//接收整型数据
+       String name = scan.nextString();//接收字符串类型数据
+       long age = scan.nextLong();//接收long型数据
+       double weight = scan.nextDouble();//接收双精度浮点型数据
+       float weight1 = scan.nextFloat();//接收单精度浮点型舒服
+       String word = scan.nextString();
+       char c = word.charAt(0);//只接收字符串的首个(0)单个字符数据
+```
+3. 产生随机数
+``` java
+    double d1 = Math.random();//随机返回一个为double型的[0，1)之间的值。
+```
 
