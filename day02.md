@@ -94,3 +94,6 @@ int i = 8 << 1;
     double d1 = Math.random();//随机返回一个为double型的[0，1)之间的值。
 ```
 
+### Review ###
+1. 三元运算符:(boolean表达式) ? 表达式1 : 表达式2 ，if-else， switch-case三者的应用场景
+>三元运算符可执行语句较少，效率最高，且所有的三元运算符都可以转换为if-else，反之不然。switch-case效率稍高，但不能表示范围类型的条件，所有的switch都可以转换为if-else，反之不然。
